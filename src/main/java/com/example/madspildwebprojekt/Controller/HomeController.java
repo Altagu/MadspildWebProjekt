@@ -24,4 +24,9 @@ public class HomeController {
     public String virksomhed() {
         return "home/virksomhed";
     }
+
+    @GetMapping("/info")
+    public String info() {
+        return "home/info";
+    }
 }

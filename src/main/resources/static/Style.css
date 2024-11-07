@@ -2,6 +2,8 @@
 /*General settings*/
 body {
     font-family: Arial, sans-serif;
+    display: block;
+    margin: 0px;
 }
 
 .banner img{
@@ -74,10 +76,98 @@ body {
     text-align: center;
 }
 
-/*Forbruger CSS*/
+/*Header settings*/
+.header {
+    background-color: #5c6e56;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+}
 
+/*Navigation settings*/
+nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
 
-/*Organisation CSS*/
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
 
+nav a:hover {
+    color: lightgray;
+}
 
-/*Virksomhed CSS*/
+/*Button settings*/
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c6e56;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    box-shadow: 0 4px 8px #4f634b;
+    transition: transform 0.3s ease;
+}
+
+.button:hover{
+    transform: translateY(-5px);
+    color: #a5b1ba;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Dropdown settings*/
+.dropdownmenu {
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: #7f9877;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: #222222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
