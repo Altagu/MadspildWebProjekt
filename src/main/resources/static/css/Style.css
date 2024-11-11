@@ -88,9 +88,38 @@ body {
 
 /*Error page settings*/
 .error {
-    min-height: 50vh; /* Ensures the wrapper takes full viewport height */
-    margin: 20px;
+    min-height: 50vh;
+    margin: 10px;
     padding: 20px;
-    object-fit: cover;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-aligns text inside the .error container */
 }
 
+.error h1 {
+    max-width: 600px;
+}
+
+.error p {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.errorBtn{
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.errorBtn:hover{
+    background-color: #424242;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
