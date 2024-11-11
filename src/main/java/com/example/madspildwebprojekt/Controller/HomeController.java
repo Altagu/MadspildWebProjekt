@@ -29,4 +29,14 @@ public class HomeController {
     public String info() {
         return "home/info";
     }
+
+    @GetMapping("/searchErrorPage")
+    public String searchErrorPage() {
+        return "home/searchErrorPage";
+    }
+
+    @GetMapping("/submit-comment")
+    public String submitComment() {
+        return "home/submit-comment";
+    }
 }

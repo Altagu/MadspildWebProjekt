@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>info</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Sidebar.css">
 </head>
 <body>
     <div class="header-wrapper">
-        <div class="header">
+        <div class="header" style="background-color: #aa9a5f">
+            <div class="homebutton">
+                <a href="/">
+                    <img src="images/logo.png" alt="Logo" class="logo" style="border: 2px solid #aa9a5f;">
+                </a>
+            </div>
             <div class="dropdowntest">
                 <div class="dropdown">
                     <button class="dropbtn">Menu</button>
                     <div class="dropdown-content">
-                        <a href="/">Hjem</a>
-                        <a href="/forbruger">Forbruger</a>
+                        <a href="/forbruger">Begræns madspild i hjemmet</a>
                         <a href="/organisation">Organisation</a>
                         <a href="/virksomhed">Virksomhed</a>
                         <a href="#footer-wrap">Bliv aktiv</a>
                     </div>
                 </div>
             </div>
-            <!-- Search bar form -->
-            <form class="search-form" action="/search" method="GET">
-                <input type="text" name="query" placeholder="Search..." class="search-input">
+            <form class="search-form" action="/searchErrorPage" method="GET">
+                <input type="text" name="query" placeholder="Søg..." class="search-input">
                 <button type="submit" class="search-button">🔍</button>
             </form>
+        </div>
     </div>
     <div class="banner">
         <img src="Glutenfri-madvarer.jpg" alt="Banner image">
@@ -41,6 +48,10 @@
                 </ul>
                 <p>"Der er mad nok i verden, og alligevel sulter millioner. Hvis vi ikke gør noget drastisk, kan det betyde en katastrofe for kloden" – FN's Generalsekretær Ban Ki-moon.</p>
                 <p>Hvert år smider butikker i Danmark omkring 163.000 ton mad ud. Flere supermarkeder er begyndt at lave super-tilbud på varer, som nærmer sig sidste salgsdato, eller give dem væk gratis. På den måde er de med til at mindske madspildet.</p>
+                <p>Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild fra husholdningerne
+                    261.000-ton pr. år.</p>
+                <p>Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p>
+                <p>Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p>
                 <ul>
                     <h3>Oversigt over madspild:</h3>
                     <li>Middagsrester med fisk, fjerkræ og kød: 14 procent.</li>
@@ -65,12 +76,11 @@
                     </ul>
                 </div>
             </aside>
-
         </div>
     </main>
 
     <footer>
-        <div class="footer">
+        <div class="footer" style="background-color: #71673f">
             <div class="footer-content">
                 <div>
                     <h4>Stop madspild</h4>
@@ -102,7 +112,7 @@
                 <p>Telefon: 12345678</p>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" style="background-color: #71673f">
             <p>© 2024 Madspild</p>
         </div>
     </footer>

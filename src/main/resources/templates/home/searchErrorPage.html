@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>home</title>
+    <title>Search error page</title>
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="css/Footer.css">
@@ -10,10 +10,10 @@
 </head>
 <body>
     <div class="header-wrapper">
-        <div class="header" style="background-color: #5c6e56">
+        <div class="header" style="background-color: #222222">
             <div class="homebutton">
                 <a href="/">
-                    <img src="images/logo.png" alt="Logo" class="logo" style="border: 2px solid #5c6e56;">
+                    <img src="images/logo.png" alt="Logo" class="logo" style="border: 2px solid #222222;">
                 </a>
             </div>
             <div class="dropdowntest">
@@ -21,43 +21,26 @@
                     <button class="dropbtn">Menu</button>
                     <div class="dropdown-content">
                         <a href="/info">Om madspild</a>
-                        <a href="/forbruger">Begræns madspild i hjemmet</a>
+                        <a href="/forbruger">Forbruger</a>
                         <a href="/organisation">Organisation</a>
                         <a href="/virksomhed">Virksomhed</a>
                         <a href="#footer-wrap">Bliv aktiv</a>
                     </div>
                 </div>
             </div>
-            <form class="search-form" action="/searchErrorPage" method="GET">
+            <!-- Search bar form -->
+            <form class="search-form" action="/" method="GET">
                 <input type="text" name="query" placeholder="Søg..." class="search-input">
                 <button type="submit" class="search-button">🔍</button>
             </form>
         </div>
     </div>
-    <div class="banner">
-        <img src="madspild home.jpg" alt="Banner image">
+    <div class="error">
+        <h1>Der er sket en fejl</h1>
+        <p>Vi kunne desværre ikke finde det, du ledte efter. Prøv venligst igen.</p>
     </div>
-<div class="button-container">
-    <a href="/info" class="button">
-        <img src="4.jpg" alt="Om madspild" class="button-icon">
-        Om madspild
-    </a>
-    <a href="/forbruger" class="button">
-        <img src="gode_raad6.png" alt="Gode råd" class="button-icon">
-        Råd til forbrugere
-    </a>
-    <a href="/organisation" class="button">
-        <img src="Organisation.png" alt="Organisation" class="button-icon">
-        Organisation
-    </a>
-    <a href="/virksomhed" class="button">
-        <img src="virksomhed.png" alt="Virksomhed" class="button-icon">
-        Virksomhed
-    </a>
-    </div>
-
     <footer>
-        <div class="footer" style="background-color: #404c3b">
+        <div class="footer" style="background-color: #222222">
             <div class="footer-content">
                 <div>
                     <h4>Stop madspild</h4>
@@ -89,7 +72,7 @@
                 <p>Telefon: 12345678</p>
             </div>
         </div>
-        <div class="footer-bottom" style="background-color: #404c3b">
+        <div class="footer-bottom" style="background-color: #222222">
             <p>© 2024 Madspild</p>
         </div>
     </footer>
