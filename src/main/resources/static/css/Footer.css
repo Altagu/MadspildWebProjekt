@@ -8,6 +8,10 @@
     flex-wrap: wrap;  /* Allows wrapping on smaller screens */
 }
 
+.footer p{
+    line-height: 1.5;
+}
+
 .footer-bottom {
     padding: 10px;
     color: lightgray;
