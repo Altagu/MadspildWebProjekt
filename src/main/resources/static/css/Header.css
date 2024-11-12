@@ -23,7 +23,7 @@
     height: auto;
     border-radius: 8px;      /* Optional: adds rounded corners to the border */
     padding: 5px;            /* Optional: gives some space between the image and the border */
-    background-color: #a57d7d;
+    background-color: #ffffff;
 }
 
 .homebutton:hover{

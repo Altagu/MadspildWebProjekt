@@ -92,10 +92,10 @@ body {
     margin: 10px;
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center-aligns text inside the .error container */
+    text-align: center;
 }
 
 .error h1 {
